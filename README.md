@@ -35,7 +35,7 @@ CSD-RkNN/:
 │    ├── csd.py
 │    ├── slice.py
 │    └── vr.py
-├── benchmark.py
+├── experiments.py [experiments (including benchmark experiments and case study experiments)]
 └── test.py
 ```
 ## Usage
@@ -114,7 +114,8 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_size_on_MonoRkNN(1000)
 >>> plot_dual_distribution(time_cost)
 >>> plot_dual_distribution(io_cost)
->>> 
+```
+```python
 >>> # effect of data size on Bi-RkNN
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_size_on_BiRkNN(10)
 >>> plot_dual_distribution(time_cost)
@@ -122,7 +123,8 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_size_on_BiRkNN(1000)
 >>> plot_dual_distribution(time_cost)
 >>> plot_dual_distribution(io_cost)
->>> 
+```
+```python
 >>> # effect of k on Mono-RkNN
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_k_on_MonoRkNN('Synthetic')
 >>> plot_dual_distribution(time_cost)
@@ -130,7 +132,8 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_k_on_MonoRkNN('Real')
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
->>> 
+```
+```python
 >>> # effect of k on Bi-RkNN
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_k_on_BiRkNN('Synthetic')
 >>> plot_dual_distribution(time_cost)
@@ -138,7 +141,8 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_k_on_BiRkNN('Real')
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
->>> 
+```
+```python
 >>> # effect of number of users relative to number of facilities
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_user_num_relative_to_facility_num(10)
 >>> plot_dual_distribution(time_cost)
@@ -146,7 +150,8 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_user_num_relative_to_facility_num(1000)
 >>> plot_dual_distribution(time_cost)
 >>> plot_dual_distribution(io_cost)
-
+```
+```python
 >>> # effect of data distribution
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_distribution(10)
 >>> plot_single_distribution(time_cost)
@@ -154,22 +159,26 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_distribution(1000)
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
-
+```
+```python
 >>> # effect RkNN queries for restaurant
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_restaurant()
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
-
+```
+```python
 >>> # effect RkNN queries for mall
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_mall()
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
-
+```
+```python
 >>> # effect RkNN queries for hospital
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_hospital()
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
-
+```
+```python
 >>> # effect RkNN queries for school
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_school()
 >>> plot_single_distribution(time_cost)
