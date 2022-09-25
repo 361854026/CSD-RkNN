@@ -103,7 +103,6 @@ Plot the result:
 >>> plt.show()
 ```
 ![](images/usage_example.png)
-
 ## Evaluation
 If you want to evaluate the performance of CSD-R*k*NN against other algorithms (e.g., SLICE and VR-R*k*NN), you can run the following codes.
 ```python
@@ -115,6 +114,20 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> plot_dual_distribution(time_cost)
 >>> plot_dual_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td colspan="2" align="center">Effect of data size on Mono-RkNN</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-data-size-on-BiRkNN-time-cost(k=10).png"><br>Time cost (k=10)</td>
+    <td align="center"><img src="images/Effect-of-data-size-on-BiRkNN-io-cost(k=10).png"><br>Number of I/Os (k=10)</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-data-size-on-BiRkNN-time-cost(k=1000).png"><br>Time cost (k=1000)</td>
+    <td align="center"><img src="images/Effect-of-data-size-on-BiRkNN-io-cost(k=1000).png"><br>Number of I/Os (k=1000)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect of data size on Bi-RkNN
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_size_on_BiRkNN(10)
