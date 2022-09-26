@@ -238,7 +238,7 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 <table>
   <tr>
     <td align="center"><img src="images/Time-cost-of-RkNN-for-restaurant.png"><br>Time cost (Restaurant)</td>
-    <td align="center"><img src="images/IO-cost-of-RkNN-for-restaurant.png"><br>Time cost (Restaurant)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-restaurant.png"><br>Number of I/Os (Restaurant)</td>
   </tr>
 </table>
 
@@ -251,7 +251,7 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 <table>
   <tr>
     <td align="center"><img src="images/Time-cost-of-RkNN-for-mall.png"><br>Time cost (Mall)</td>
-    <td align="center"><img src="images/IO-cost-of-RkNN-for-mall.png"><br>Time cost (Mall)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-mall.png"><br>Number of I/Os (Mall)</td>
   </tr>
 </table>
 
@@ -264,7 +264,7 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 <table>
   <tr>
     <td align="center"><img src="images/Time-cost-of-RkNN-for-hospital.png"><br>Time cost (Hospital)</td>
-    <td align="center"><img src="images/IO-cost-of-RkNN-for-hospital.png"><br>Time cost (Hospital)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-hospital.png"><br>Number of I/Os (Hospital)</td>
   </tr>
 </table>
 
@@ -277,7 +277,7 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 <table>
   <tr>
     <td align="center"><img src="images/Time-cost-of-RkNN-for-school.png"><br>Time cost (School)</td>
-    <td align="center"><img src="images/IO-cost-of-RkNN-for-school.png"><br>Time cost (School)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-school.png"><br>Number of I/Os (School)</td>
   </tr>
 </table>
 
