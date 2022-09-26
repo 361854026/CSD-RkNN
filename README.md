@@ -1,6 +1,6 @@
 # CSD-R*k*NN: Conic Section Discriminances for Large Scale Reverse *k* Nearest Neighbors Queries
 ## Overview
-The neighborhood relationships between spatial objects can help to understand their essential features, most geographic information systems (GIS) and location based services (LBS) therefore provide two types of spatial queries for nearest neighbor analysis: ***k* nearest neighbors** (***k*NN**) query and **reverse *k* nearest neighbors** (**R*****k*NN**) query.
+The neighborhood relationships between spatial objects can help to understand their essential features, most geographic information systems (GIS) and location based services (LBS) therefore provide two types of spatial queries for nearest neighbor analysis: *k* nearest neighbors (*k*NN) query and reverse *k* nearest neighbors (R*k*NN) query.
 The aim of *k*NN queries is to find the *k* points closest to the query point, while for R*k*NN queries, all the points that consider the query point as one of their *k* closest points are required to be found.
 For some nearest neighbor analyses in geospatial applications, *k*NN queries are practical and easy to implement.
 However, when faced with some special scenarios, such as facility location, influential domain analysis and potential customer analysis, the query of R*k*NN is more suitable.
@@ -10,8 +10,8 @@ Accordingly, the main goal of this work is to improve the performance of R*k*NN 
 According to the characteristics of conic sections, we propose a verification approach, named Conic Section Discriminance (CSD), to determine whether points belong to the R*k*NN set.
 With CSD, only a small fraction of candidates need to be verified by costly *k*NN queries, while the verification cost of the vast majority of candidates is only *O*(1).
 Furthermore, we propose a Voronoi based candidate generation approach to reduce the candidate set.
-Based on VoR-tree, we combined two proposed approaches to form a novel R*k*NN algorithm, termed **CSD-R*****k*NN**.
-A series of experiments were conducted to compare CSD-R*k*NN with **SLICE**, the state-of-the-art R*k*NN algorithm, and **VR-R*****k*NN**, the original R*k*NN algorithm on VoR-tree.
+Based on VoR-tree, we combined two proposed approaches to form a novel R*k*NN algorithm, termed CSD-R*k*NN.
+A series of experiments were conducted to compare CSD-R*k*NN with SLICE, the state-of-the-art R*k*NN algorithm, and VR-R*k*NN, the original R*k*NN algorithm on VoR-tree.
 The experimental results indicate that CSD-R*k*NN significantly outperforms the other two algorithms, especially when the value of *k* is relatively large.
 ## Project structure
 ```
