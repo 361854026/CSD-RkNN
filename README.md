@@ -154,6 +154,17 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Effect-of-k-on-MonoRkNN-time-cost(Synthetic).png"><br>Time cost (Synthetic)</td>
+    <td align="center"><img src="images/Effect-of-k-on-MonoRkNN-io-cost(Synthetic).png"><br>Number of I/Os (Synthetic)</td>
+  </tr>
+  <tr>
+<td align="center"><img src="images/Effect-of-k-on-MonoRkNN-time-cost(Real).png"><br>Time cost (Real)</td>
+    <td align="center"><img src="images/Effect-of-k-on-MonoRkNN-io-cost(Real).png"><br>Number of I/Os (Real)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect of k on Bi-RkNN
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_k_on_BiRkNN('Synthetic')
@@ -163,6 +174,17 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Effect-of-k-on-BiRkNN-time-cost(Synthetic).png"><br>Time cost (Synthetic)</td>
+    <td align="center"><img src="images/Effect-of-k-on-BiRkNN-io-cost(Synthetic).png"><br>Number of I/Os (Synthetic)</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-k-on-BiRkNN-time-cost(Real).png"><br>Time cost (Real)</td>
+    <td align="center"><img src="images/Effect-of-k-on-BiRkNN-io-cost(Real).png"><br>Number of I/Os (Real)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect of number of users relative to number of facilities
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_user_num_relative_to_facility_num(10)
@@ -172,6 +194,17 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> plot_dual_distribution(time_cost)
 >>> plot_dual_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Effect-of-user-relative-to-facility-on-BiRkNN-time-cost(k=10).png"><br>Time cost (k=10)</td>
+    <td align="center"><img src="images/Effect-of-user-relative-to-facility-on-BiRkNN-io-cost(k=10).png"><br>Number of I/Os (k=10)</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-user-relative-to-facility-on-BiRkNN-time-cost(k=1000).png"><br>Time cost (k=1000)</td>
+    <td align="center"><img src="images/Effect-of-user-relative-to-facility-on-BiRkNN-io-cost(k=1000).png"><br>Number of I/Os (k=1000)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect of data distribution
 >>> time_cost, io_cost = experiments.BenchmarkExperiments.evaluate_effect_of_data_distribution(10)
