@@ -219,13 +219,13 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
     <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-time-cost(k=10).png"><br>Time cost (k=10)</td>
   </tr>
   <tr>
-    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-io-cost(k=10).png"><br>Time cost (k=10)</td>
+    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-io-cost(k=10).png"><br>Number of I/Os (k=10)</td>
   </tr>
   <tr>
     <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-time-cost(k=1000).png"><br>Time cost (k=1000)</td>
   </tr>
   <tr>
-    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-io-cost(k=1000).png"><br>Time cost (k=1000)</td>
+    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-io-cost(k=1000).png"><br>Number of I/Os (k=1000)</td>
   </tr>
 </table>
 
@@ -235,24 +235,52 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Time-cost-of-RkNN-for-restaurant.png"><br>Time cost (Restaurant)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-restaurant.png"><br>Time cost (Restaurant)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect RkNN queries for mall
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_mall()
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Time-cost-of-RkNN-for-mall.png"><br>Time cost (Mall)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-mall.png"><br>Time cost (Mall)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect RkNN queries for hospital
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_hospital()
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Time-cost-of-RkNN-for-hospital.png"><br>Time cost (Hospital)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-hospital.png"><br>Time cost (Hospital)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect RkNN queries for school
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_school()
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Time-cost-of-RkNN-for-school.png"><br>Time cost (School)</td>
+    <td align="center"><img src="images/IO-cost-of-RkNN-for-school.png"><br>Time cost (School)</td>
+  </tr>
+</table>
+
 Alternatively, you can run test.py on the terminal directly:
 ```
  python3 test.py
