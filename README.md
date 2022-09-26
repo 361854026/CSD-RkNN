@@ -214,6 +214,21 @@ If you want to evaluate the performance of CSD-R*k*NN against other algorithms (
 >>> plot_single_distribution(time_cost)
 >>> plot_single_distribution(io_cost)
 ```
+<table>
+  <tr>
+    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-time-cost(k=10).png"><br>Time cost (k=10)</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-io-cost(k=10).png"><br>Time cost (k=10)</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-time-cost(k=1000).png"><br>Time cost (k=1000)</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="images/Effect-of-distribution-on-BiRkNN-io-cost(k=1000).png"><br>Time cost (k=1000)</td>
+  </tr>
+</table>
+
 ```python
 >>> # effect RkNN queries for restaurant
 >>> time_cost, io_cost = experiments.CaseStudyExperiments.evaluate_RkNN_for_restaurant()
