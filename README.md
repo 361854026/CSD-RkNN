@@ -1,4 +1,4 @@
-# CSD-R*k*NN: Conic Section Discriminances for Large Scale Reverse *k* Nearest Neighbors Queries
+# CSD-R*k*NN
 ## Project structure
 ```
 CSD-RkNN/:
